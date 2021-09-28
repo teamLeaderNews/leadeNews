@@ -13,6 +13,6 @@ public class ShowBehaviorDto {
     // 设备ID
     @IdEncrypt
     Integer equipmentId;
+    // 文章列表
     List<ApArticle> articleIds;
-
 }
