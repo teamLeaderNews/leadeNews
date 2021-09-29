@@ -4,6 +4,7 @@ import com.heima.behavior.BehaviorJarApplication;
 import com.heima.behavior.service.AppShowBehaviorService;
 import com.heima.model.article.pojos.ApArticle;
 import com.heima.model.behavior.dtos.ShowBehaviorDto;
+import com.heima.model.common.dtos.ResponseResult;
 import com.heima.model.user.pojos.ApUser;
 import com.heima.utils.threadlocal.AppThreadLocalUtils;
 import org.junit.Test;
@@ -25,7 +26,7 @@ public class BehaviorTest {
     @Test
     public void testSava(){
         ApUser apUser = new ApUser();
-        apUser.setId(21l);
+        apUser.setId(2014L);
         AppThreadLocalUtils.setUser(apUser);
         ShowBehaviorDto dto = new ShowBehaviorDto();
         List<ApArticle> articlesList = new ArrayList<>();
@@ -33,6 +34,6 @@ public class BehaviorTest {
         apArticle.setId(200);
         articlesList.add(apArticle);
         dto.setArticleIds(articlesList);
-        showBehaviorService.saveShowBehavior(dto);
+        ResponseResult responseResult = showBehaviorService.saveShowBehavior(dto);
     }
 }
