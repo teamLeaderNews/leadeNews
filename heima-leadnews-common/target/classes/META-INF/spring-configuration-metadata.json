@@ -2,13 +2,13 @@
   "groups": [
     {
       "name": "mysql.core",
-      "type": "com.heima.common.mysql.core.TransactionConfig",
-      "sourceType": "com.heima.common.mysql.core.TransactionConfig"
+      "type": "com.heima.common.mysql.core.MysqlCoreConfig",
+      "sourceType": "com.heima.common.mysql.core.MysqlCoreConfig"
     },
     {
       "name": "mysql.core",
-      "type": "com.heima.common.mysql.core.MysqlCoreConfig",
-      "sourceType": "com.heima.common.mysql.core.MysqlCoreConfig"
+      "type": "com.heima.common.mysql.core.TransactionConfig",
+      "sourceType": "com.heima.common.mysql.core.TransactionConfig"
     }
   ],
   "properties": [

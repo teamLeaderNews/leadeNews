@@ -5,6 +5,9 @@ import lombok.Data;
 
 @Data
 public class ApArticleConfig {
+    /**
+     * 文章配置信息
+     */
     private Long id;
     // 增加注解，JSON序列化时自动混淆加密
 //    @JsonIgnore
